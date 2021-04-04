@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Homework5</string>
+    <string name="empId">Employee ID</string>
+    <string name="EmpIdVal" />
+    <string name="empName">Name</string>
+    <string name="EmpGender">Gender</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="Email">Email Address</string>
+    <string name="AccessCode">Access Code</string>
+    <string name="ConfirmCode">Confirm Code</string>
+    <string name="Department">Department</string>
+
+    <string name="AdAccess">A/D Access</string>
+    <string name="Access">Allowed Access?</string>
+    <string name="Login">LOGIN</string>
+    <string name="Register">REGISTER</string>
+
+    <string-array name="departments">
+        <item>Choose Department</item>
+        <item>Computer Science</item>
+        <item>Education</item>
+        <item>Science</item>
+        <item>Humanities</item>
+        <item>Nursing</item>
+        <item>Business</item>
+    </string-array>
+    <string name="emptyToast">Cannot leave fields empty.</string>
+    <string name="databaseToast">ID not found in database.</string>
+    <string name="IDToast">ID must only contain letters and numbers.</string>
+    <string name="nameToast">Name must only contain letters.</string>
+    <string name="genderToast">Please choose a gender.</string>
+    <string name="emailToast">Please enter a valid email.</string>
+    <string name="confirmToast">Confirm code must match access code.</string>
+    <string name="departmentToast">Please choose a department.</string>
+    <string name="success">Information added to database.</string>
+</resources>

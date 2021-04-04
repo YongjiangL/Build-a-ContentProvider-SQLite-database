@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/emp_id_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/empId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emp_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_toEndOf="@+id/emp_id_text"
+        android:layout_toRightOf="@+id/emp_id_text"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/EmpIdVal"
+        android:inputType="textCapCharacters"
+        android:text="@string/EmpIdVal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/emp_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emp_id_text"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/empName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emp_id_text" />
+
+    <EditText
+        android:id="@+id/emp_name"
+        android:hint="@string/EmpIdVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emp_id"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/emp_name_text"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:text="@string/EmpIdVal"
+        android:layout_marginStart="108dp"
+        android:layout_toEndOf="@+id/emp_name_text" />
+
+    <TextView
+        android:id="@+id/gender_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="42dp"
+        android:text="@string/EmpGender"
+        android:layout_below="@+id/emp_name_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emp_name_text" />
+
+    <RadioGroup
+        android:id="@+id/gender_group"
+        android:layout_width="221dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/emp_name"
+        android:layout_marginStart="101dp"
+        android:layout_marginLeft="101dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/gender_text"
+        android:layout_toRightOf="@+id/gender_text">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="92dp"
+            android:layout_height="match_parent"
+            android:text="@string/Male" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:text="@string/Female" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender_text"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/Email"
+        android:layout_marginStart="28dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender_group"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@+id/email_text"
+        android:layout_toRightOf="@+id/email_text"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/EmpIdVal"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/access_code_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_text"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/AccessCode"
+        android:layout_marginStart="28dp" />
+
+    <EditText
+        android:id="@+id/access_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/access_code_text"
+        android:layout_toRightOf="@+id/access_code_text"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/EmpIdVal"
+        android:inputType="numberPassword" />
+
+    <TextView
+        android:id="@+id/confirm_code_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/access_code_text"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/ConfirmCode" />
+
+    <EditText
+        android:id="@+id/confirm_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/access_code"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/confirm_code_text"
+        android:ems="10"
+        android:hint="@string/EmpIdVal"
+        android:inputType="numberPassword"
+        android:layout_marginStart="61dp"
+        android:layout_toEndOf="@+id/confirm_code_text"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/department_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirm_code_text"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="37dp"
+        android:text="@string/Department"
+        android:layout_marginStart="28dp" />
+
+    <Spinner
+        android:id="@+id/department"
+        android:layout_width="223dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/confirm_code"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/department_text"
+        android:layout_toRightOf="@+id/department_text"
+        android:entries="@array/departments"/>
+
+    <TextView
+        android:id="@+id/allowed_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/department_text"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/AdAccess"
+        android:layout_marginStart="28dp" />
+
+    <CheckBox
+        android:id="@+id/allowed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/department"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/allowed_text"
+        android:text="@string/Access"
+        android:layout_marginStart="74dp"
+        android:layout_toEndOf="@+id/allowed_text" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginBottom="43dp"
+                android:text="@string/Login"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/register_button" />
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="43dp"
+                android:text="@string/Register"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
